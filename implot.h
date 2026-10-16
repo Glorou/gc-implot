@@ -1194,7 +1194,7 @@ IMPLOT_API void EndDragDropSource();
 //-----------------------------------------------------------------------------
 // [SECTION] Styling
 //-----------------------------------------------------------------------------
-    
+
 // Styling colors in ImPlot works similarly to styling colors in ImGui, but
 // with one important difference. Like ImGui, all style colors are stored in an
 // indexable array in ImPlotStyle. You can permanently modify these values through

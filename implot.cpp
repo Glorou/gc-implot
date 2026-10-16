@@ -256,7 +256,7 @@ ImPlotStyle::ImPlotStyle() {
     FitPadding         = ImVec2(0,0);
     DigitalPadding     = 20;
     DigitalSpacing     = 4;
-    
+
     ImPlot::StyleColorsAuto(this);
 
     Colormap = ImPlotColormap_Deep;
@@ -4556,7 +4556,7 @@ ImPlotMarker NextMarker() {
     ++gp.CurrentItems->MarkerIdx;
     return idx;
 }
-    
+
 //------------------------------------------------------------------------------
 // [Section] Colormaps
 //------------------------------------------------------------------------------
@@ -4630,7 +4630,7 @@ ImU32 NextColormapColorU32() {
 
 ImVec4 NextColormapColor() {
     return ImGui::ColorConvertU32ToFloat4(NextColormapColorU32());
-}    
+}
 
 int GetColormapSize(ImPlotColormap cmap) {
     ImPlotContext& gp = *GImPlot;
@@ -5849,7 +5849,7 @@ void StyleColorsClassic(ImPlotStyle* dst) {
     ImVec4* colors                  = style->Colors;
 
     style->MinorAlpha               = 0.5f;
-    
+
     colors[ImPlotCol_FrameBg]       = ImVec4(0.43f, 0.43f, 0.43f, 0.39f);
     colors[ImPlotCol_PlotBg]        = ImVec4(0.00f, 0.00f, 0.00f, 0.35f);
     colors[ImPlotCol_PlotBorder]    = ImVec4(0.50f, 0.50f, 0.50f, 0.50f);
